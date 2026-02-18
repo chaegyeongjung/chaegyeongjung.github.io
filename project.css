@@ -1,0 +1,94 @@
+* {box-sizing: border-box;}
+body {background-color: #EAEAEA;
+    color: #555555;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;}
+header { background-color: #ffffff;
+    color: #FFFFFF;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    padding: 0em;
+    padding-left: 1em;}
+header a {letter-spacing: -0.08em;
+    text-decoration: none;}
+header a:link {color: #3399cc;}
+header a:visited {color: #3399cc;}
+header a:hover {color: #90C7E3;}
+nav {font-weight: bold;
+    padding: 0em;
+    font-size: 120%;
+    text-align: right;
+    display:block;}
+nav ul {list-style-type: none;
+    padding-left: 0;
+    font-size: 1em;}
+nav li {border-bottom: 1px solid #000033;}
+nav a {text-decoration: none;}
+nav a:link {color: #90C7E3;}
+nav a:visited {color: #90C7E3;}
+nav a:hover {color: #3399cc;}
+main {background-color: #FFFFFF;
+    padding-top: 1px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    padding-left: 30px;
+    display: block;
+    overflow: auto;}
+h1 {margin-bottom: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: 0em;
+    margin-top: 0px;
+    padding-bottom: 0.5em;
+    padding-top: 0.5em;}
+footer {font-size: 75%;
+    font-style: italic;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 2em;
+    background-color: #FFFFFF;}
+#homehero {height: 700px;
+    background-image: url(project/main.jpg);
+    background-size: cover;
+    background-position: center;
+    position: relative;}
+.herotitle {
+    position: absolute;
+    bottom: -10px;
+    left: -10px;
+    color: #ffffff;
+    font-size:8vw;
+    letter-spacing: -0.1em;
+    transform: scaleY(3);
+    margin: 0;
+}
+form {display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;}
+input, textarea {margin-bottom: 0.5em;}
+@media (min-width: 600px){
+    nav ul {display: flex;
+        justify-content: flex-end;
+        gap: 1.5em;}
+    nav li {border-bottom: none;
+        margin-left: 1em;
+        margin-right: 1em;}
+    section {margin-left: 2em;
+        margin-right: 2em;}
+    .flow {display: flex;
+        flex-direction: row;
+        flex: 1;}
+    form {display: grid;
+        width: 60%;
+        max-width: 30em;
+        grid-gap: 1em;
+        grid-template-columns: 6em 1fr;}
+    input[type="submit"] {grid-column: 2/3;
+    width: 9em;}
+}
+@media (min-width: 1024px){
+    nav {text-align: right;
+    padding-left: 1em;}
+}
